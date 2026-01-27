@@ -82,6 +82,7 @@ class ConversationListScreen extends StatelessWidget {
                       : const Icon(Icons.chevron_right, size: 16),
                   onTap: () {
                     controller.openChat(
+                      context: context,
                       receiverId: receiverId!,
                       receiverName: receiverName,
                     );
